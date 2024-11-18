@@ -44,8 +44,8 @@ if ingredients_list:
         st.subheader(fruit_chosen + 'Nutrition information')
         fruityvice_response = requests.get("https://my.smoothiefroot.com/api/fruit/" + search_on)
         fv_df = st.dataframe(data=fruityvice_response.json(), use_container_width=True)
-        #smoothiefroot_response = requests.get("https://my.smoothiefroot.com/api/fruit/" + fruit_chosen)
-        #sf_df =st.dataframe(data=smoothiefroot_response.json(),use_container_width=True)
+        smoothiefroot_response = requests.get("https://my.smoothiefroot.com/api/fruit/" + fruit_chosen)
+        sf_df =st.dataframe(data=smoothiefroot_response.json(),use_container_width=True)
 
 
         
